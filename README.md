@@ -100,7 +100,7 @@ Solve each problem and then move to the next numbered file.
 > example: `equals(1,1) === equals(1)(1)`
 > there is a curryN function in your `src` directory
 
-* [ ] equals
+* [x] equals
 
  
 > Create a predicate function that compares two arguments and returns true of false based on value equality
