@@ -285,16 +285,14 @@
     });
 
     /**
-     * @param {number} a 
+     * @param {number} a
      * @param {number} b
-     * 
-     * @param {number} 
+     *
+     * @param {number}
      */
 
-
-
     function add(a, b) {
-        return a + b;
+      return a + b
     }
 
     test('1 + 1 should equal 2', function (assert) {
@@ -357,6 +355,15 @@
     test('5 + 1 = 6', function(assert) {
       const result = inc(5);
       assert.equal(result, 6, '5 + 1 should equal 6');
+    });
+
+    function dec(a) {
+      return subtract(a, 1)
+    }
+
+    test('5 - 1 = 4', function(assert) {
+      const result = dec(5);
+      assert.equal(result, 4, '5 - 1 should equal 4');
     });
 
     function createCommonjsModule(fn, module) {

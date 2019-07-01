@@ -5,6 +5,7 @@ import './multiply_test'
 import './divide_test'
 import './prop_test'
 import './inc_test'
+import './dec_test'
 import tapBrowserColor from 'tap-browser-color'
 tapBrowserColor()
 /*

@@ -1,12 +1,10 @@
 /**
- * @param {number} a 
+ * @param {number} a
  * @param {number} b
- * 
- * @param {number} 
+ *
+ * @param {number}
  */
 
-
-
 export default function add(a, b) {
-    return a + b;
+  return a + b
 }
