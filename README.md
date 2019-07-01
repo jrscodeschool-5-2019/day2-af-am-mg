@@ -30,9 +30,9 @@ Lets take the first callback `equals`.
 
 Steps
 
-* create an `equals.js` file in the `src` directory.
-* create a `test/equals_test.js` file in the `test` directory.
-* add the test boilier plate to the `test/equals.js` file.
+- create an `equals.js` file in the `src` directory.
+- create a `test/equals_test.js` file in the `test` directory.
+- add the test boilier plate to the `test/equals.js` file.
 
 ```js
 import test from 'tape'
@@ -63,7 +63,7 @@ assert.ok(equals('hello', 'hello'))
 
 > you can prepend not before each method to reverse the assertion.
 
-* now proceed to the `equals.js` file and add the following implementation
+- now proceed to the `equals.js` file and add the following implementation
 
 ```js
 /**
@@ -88,9 +88,9 @@ export default equals
 > Remember to always create an explicit return
 > Remember to always export your function
 
-* save all your work and verify you have a green screen in the browser.
+- save all your work and verify you have a green screen in the browser.
 
-* congrats, now check off the first exercise and proceed to the next one.
+- congrats, now check off the first exercise and proceed to the next one.
 
 Solve each problem and then move to the next numbered file.
 
@@ -100,134 +100,133 @@ Solve each problem and then move to the next numbered file.
 > example: `equals(1,1) === equals(1)(1)`
 > there is a curryN function in your `src` directory
 
-* [x] equals
+- [x] equals
 
- 
 > Create a predicate function that compares two arguments and returns true of false based on value equality
 
 > Why? Having a composable function that can return if two objects are equal can provide value as you combine multiple functions together and need to provide conditionals that may fork the dataflow.
 
-* [x] add
+- [x] add
 
 > Create a binary function that adds two numbers and returns the result as a number
-> Why? Having a way to add two numbers, gives you the ability to compose computation.  
+> Why? Having a way to add two numbers, gives you the ability to compose computation.
 
-* [x] subtract
+- [x] subtract
 
 > `(Number a, Number b) => a - b`
 > Create a binary function that subtracts two number arguments and returns the result as a number
 > Why? Having a way to subtract two numbers, gives you the ability to compose computation.
 
-* [x] multiply
+- [x] multiply
 
 > `(Number a, Number b) => a * b`
 > Create a binary function that multiplies two number arguments and return the result as a number
 > Why? Having a way to multiply two numbers, gives you the ability to compose computation.
 
-* [ ] divide
+- [x] divide
 
 > `(Number a, Number b) => a / b`
 > Create a binary function that divides two number arguments and returns the result as a number
 > Why? Having a way to divide two numbers, gives you the ability to compose computation.
 
-* [ ] prop
+- [x] prop
 
 > `(string, object) => object[string]`
 > Create a binary function that takes a string as the first parameter and an object as the second parameter, then return the value of the property that has a name of the first argument from the second argument object, return null if there is no property of that name on the object.
 > Why? Often times in a compose chain, you want to extract just the value of a property on a object data structure.
 
-* [ ] path
+- [] path
 
 > `(array, object) => object[...array]`
 > Take an array and object as parameters, then use the array to drill down the properties of the
-object to get a value, if no value is provided return null.
+> object to get a value, if no value is provided return null.
 > Why? When accessing deep values of objects, if a property does not exist an exception will be thrown, by using an array to specify the chained values, you can get the value or a null, and no exception will be thrown if the property did not exist.
- 
-* [ ] inc
+
+- [ ] inc
 
 > `(Number) => Number + 1`
-> This function takes a number and increments the number by 1, use the add function to create this function. 
+> This function takes a number and increments the number by 1, use the add function to create this function.
 
-* [ ] dec
+- [ ] dec
 
 > `(Number) => Number - 1`
 > This function takes a number and decrements the number by 1, use the subtract function to create this function.
 
-* [ ] identity
+- [ ] identity
 
 > `(value) => value`
 > This function returns the value that is passed in to it as an input.
 
-* [ ] always
+- [ ] always
 
 > `(value) => () => value`
 > This function returns a higher order function that when called will always return the value.
 
-* [ ] gt
+- [ ] gt
 
-* [ ] lt
-* [ ] gte
-* [ ] lte
-* [ ] split
-* [ ] join
-* [ ] head
-* [ ] tail
-* [ ] nth
-* [ ] indexOf
-* [ ] isNil
-* [ ] last
-* [ ] match
-* [ ] memoize
-* [ ] not
-* [ ] pathOr
-* [ ] propOr
-* [ ] pathEq
-* [ ] propEq
-* [ ] pick
-* [ ] pluck
-* [ ] sort
-* [ ] sortBy
-* [ ] split
-* [ ] join
-* [ ] toUpper
-* [ ] toLower
-* [ ] capitalize
-* [ ] take
-* [ ] uniq
-* [ ] fromPairs
-* [ ] toPairs
-* [ ] zip
-* [ ] union
-* [ ] intersection
-* [ ] test
-* [ ] replace
-* [ ] range
-* [ ] omit
-* [ ] where
-* [ ] T
-* [ ] F
-* [ ] comparator
+- [ ] lt
+- [ ] gte
+- [ ] lte
+- [ ] split
+- [ ] join
+- [ ] head
+- [ ] tail
+- [ ] nth
+- [ ] indexOf
+- [ ] isNil
+- [ ] last
+- [ ] match
+- [ ] memoize
+- [ ] not
+- [ ] pathOr
+- [ ] propOr
+- [ ] pathEq
+- [ ] propEq
+- [ ] pick
+- [ ] pluck
+- [ ] sort
+- [ ] sortBy
+- [ ] split
+- [ ] join
+- [ ] toUpper
+- [ ] toLower
+- [ ] capitalize
+- [ ] take
+- [ ] uniq
+- [ ] fromPairs
+- [ ] toPairs
+- [ ] zip
+- [ ] union
+- [ ] intersection
+- [ ] test
+- [ ] replace
+- [ ] range
+- [ ] omit
+- [ ] where
+- [ ] T
+- [ ] F
+- [ ] comparator
 
 --
 
 > The goal of this exercise is not to do all of these in one pass, but to practice a few every day, to get used to the following concepts:
 
-* Thinking in small solutions
-* Testing your code
-* Documenting your code
-* Getting used to JavaScript syntax
-* Seeing results quickly
+- Thinking in small solutions
+- Testing your code
+- Documenting your code
+- Getting used to JavaScript syntax
+- Seeing results quickly
 
 ## share your progress
 
-* tweet it out!
-* share on linked in!
+- tweet it out!
+- share on linked in!
 
 > Let people know you are making your way through the canyon! Shout for joy when you reach the end of the canyon!!!
 
 ## The ones who completed this challenge
 
-* [Your name here!]
+- [Your name here!]
 
 ## Thank you
 

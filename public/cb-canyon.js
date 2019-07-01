@@ -350,6 +350,15 @@
       assert.equal(result, 'hello', 'On success, the object should return hello');
     });
 
+    function inc(a) {
+      return add(a, 1)
+    }
+
+    test('5 + 1 = 6', function(assert) {
+      const result = inc(5);
+      assert.equal(result, 6, '5 + 1 should equal 6');
+    });
+
     function createCommonjsModule(fn, module) {
     	return module = { exports: {} }, fn(module, module.exports), module.exports;
     }
