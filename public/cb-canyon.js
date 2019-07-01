@@ -323,6 +323,15 @@
         assert.equal(test, 0, "1 - 1 should be 0");
     });
 
+    function multiply(a, b) {
+      return a * b
+    }
+
+    test('2 * 2 = 4', function(assert) {
+      const test = multiply(2, 2);
+      assert.equal(test, 4, '2*2 should be 4');
+    });
+
     function createCommonjsModule(fn, module) {
     	return module = { exports: {} }, fn(module, module.exports), module.exports;
     }
@@ -391,7 +400,7 @@
     var tapBrowserColor_1 = tapBrowserColor.colors;
 
     tapBrowserColor();
-      /*
+    /*
     const run = async function() {
       return await import('./test')
     }
