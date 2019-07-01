@@ -332,6 +332,15 @@
       assert.equal(test, 4, '2*2 should be 4');
     });
 
+    function divide(a,b) {
+        return a / b
+    }
+
+    test('2 / 2 = 1', function(assert) {
+      const result = divide(2, 2);
+      assert.equal(result, 1, '2/2 should be 1');
+    });
+
     function createCommonjsModule(fn, module) {
     	return module = { exports: {} }, fn(module, module.exports), module.exports;
     }

@@ -112,13 +112,13 @@ Solve each problem and then move to the next numbered file.
 > Create a binary function that adds two numbers and returns the result as a number
 > Why? Having a way to add two numbers, gives you the ability to compose computation.  
 
-* [ ] subtract
+* [x] subtract
 
 > `(Number a, Number b) => a - b`
 > Create a binary function that subtracts two number arguments and returns the result as a number
 > Why? Having a way to subtract two numbers, gives you the ability to compose computation.
 
-* [ ] multiply
+* [x] multiply
 
 > `(Number a, Number b) => a * b`
 > Create a binary function that multiplies two number arguments and return the result as a number
