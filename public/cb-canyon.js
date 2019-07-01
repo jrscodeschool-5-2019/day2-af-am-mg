@@ -341,6 +341,15 @@
       assert.equal(result, 1, '2/2 should be 1');
     });
 
+    function prop(string, object) {
+      return object[string]
+    }
+
+    test('This is a prop test', function(assert) {
+      const result = prop('string', { string: 'hello' });
+      assert.equal(result, 'hello', 'On success, the object should return hello');
+    });
+
     function createCommonjsModule(fn, module) {
     	return module = { exports: {} }, fn(module, module.exports), module.exports;
     }
