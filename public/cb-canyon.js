@@ -293,13 +293,34 @@
 
 
 
-    function add(a , b) {
+    function add(a, b) {
         return a + b;
     }
 
     test('1 + 1 should equal 2', function (assert) {
         const result = add(1, 1);
         assert.equal(result, 2, "1 + 1 should be 2");
+    });
+
+    /**
+     * @param {number} a 
+     * @param {number} b
+     * 
+     * @param {number} 
+     */
+
+
+
+
+
+
+    function subtract(a, b) {
+        return a - b;
+    }
+
+    test('1 - 1 should equal zero', function (assert) {
+        const test = subtract(1, 1);
+        assert.equal(test, 0, "1 - 1 should be 0");
     });
 
     function createCommonjsModule(fn, module) {

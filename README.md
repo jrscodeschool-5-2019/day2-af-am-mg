@@ -107,7 +107,7 @@ Solve each problem and then move to the next numbered file.
 
 > Why? Having a composable function that can return if two objects are equal can provide value as you combine multiple functions together and need to provide conditionals that may fork the dataflow.
 
-* [ ] add
+* [x] add
 
 > Create a binary function that adds two numbers and returns the result as a number
 > Why? Having a way to add two numbers, gives you the ability to compose computation.  
