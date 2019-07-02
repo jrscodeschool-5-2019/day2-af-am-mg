@@ -366,6 +366,24 @@
       assert.equal(result, 4, '5 - 1 should equal 4');
     });
 
+    function value(a) {
+      return a
+    }
+
+    test('1 will equal 1', assert => {
+      const result = value(1);
+      assert.equal(result, 1, '1 should = 1');
+    });
+
+    function always(a) {
+      return value(a)
+    }
+
+    test('1 will equal 1', assert => {
+      const result = always(1);
+      assert.equal(result, 1, '1 should = 1');
+    });
+
     function createCommonjsModule(fn, module) {
     	return module = { exports: {} }, fn(module, module.exports), module.exports;
     }
